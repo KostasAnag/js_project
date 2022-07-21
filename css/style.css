@@ -1,0 +1,51 @@
+* {box-sizing: border-box;}
+
+h1 {
+	font-size:4rem;
+}
+.content{
+	     position:relative;
+		 top:120px;
+		 text-align:center;
+		 align-items:center;
+		 justify-content:center;
+		 color:white;
+		 font-family:Verdana;
+}
+
+.btns {
+	   margin-top:26px;
+}
+
+body {
+  margin: 0;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+}
+
+   
+ #counter {font-size:60px;
+   
+   }
+   
+a:hover {color:Navy;}   
+   
+.fab {
+	font-size:30px;
+    color:white;
+	cursor:pointer;
+    text-decoration:none;
+	margin:25px;
+
+}
+   
+   
+  
+  

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<title>
+	Coming Soon
+	</title>
+	
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" href="css/style.css">
+		<script src="scriptkostas.js" async></script>
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		   
+		   <link href="css/fontawesome.css" rel="stylesheet">
+           <link href="css/brands.css" rel="stylesheet">
+           <link href="css/solid.css" rel="stylesheet">
+<style>
+</style>
+</head>
+
+<body>
+  
+       <video autoplay muted loop src="ocean.mp4"></video> 
+
+  
+  
+  <div>
+	
+    <div class="content">
+	    
+		<h1>WEBSITE IS ALMOST READY</h1>
+	 
+	    <p class="heading">Our website is under construction.Will be here soon with our new awesome .<br>
+		  Suscribe to be notified.</p>
+        <p id="counter"></p>	
+		  
+		  <div class="btns">
+		     <button type="button" class="btn btn-outline-light" style="margin:25px;" onclick="window.location.reload();">HOME</button>
+             <button type="button" class="btn btn-outline-light" style="margin:25px;"  data-bs-toggle="modal" data-bs-target="#newsletterModal">SUBSCRIBE NOW</button>
+             <button type="button" class="btn btn-outline-light" style="margin:25px;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">CONTACT US</button>
+          </div>
+		  
+		  <a href="https://www.facebook.com/" class="fab fa-facebook" target="_blank" ></a>
+		  <a href="https://twitter.com/" class="fab fa-twitter" target="_blank"></a>
+		  <a href="https://www.google.com/account/about/" class="fab fa-google-plus" target="_blank"></a>
+		  <a href="https://gr.linkedin.com/" class="fab fa-linkedin" target="_blank"></a>
+		  <a href="https://www.instagram.com/" class="fab fa-instagram" target="_blank"></a>
+		  
+		  <p style="font-size:13px;">@Designed by <span style="color:Navy;"><b>Kostas Anagnostou</b></span><br>
+		     Copyrights reserved to him.2021 </p>
+		  
+    </div>
+	 
+	 
+  </div>	   
+	   
+
+
+
+  
+<!-------------------------------------Contact us Modal ------------------------------------------------------>
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" >
+    <div class="modal-content bg-secondary text-white">
+      <div class="modal-header">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div class="row pb-4">
+   
+	<div class="col-6 col-sm-6 col-md-6 col-lg-6 pt-5">
+	  <form>
+        <label for="fname">ΟΝΟΜΑ:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="A1"><br>
+        <label for="lname">ΕΠΩΝΥΜΟ:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="A2"><br>
+		<label for="street">ΟΔΟΣ:</label><br>
+        <input type="text" id="street" name="street" placeholder="A3"><br>
+        <label for="str_num">ΑΡΙΘΜΟΣ:</label><br>
+        <input type="number" id="str_num" name="str_num" placeholder="A4"><br>
+        <label for="city">ΠΟΛΗ:</label><br>
+        <input type="text" id="city" name="city" placeholder="A5"><br>
+        <label for="area">ΠΕΡΙΟΧΗ:</label><br>
+        <input type="text" id="area" name="area" placeholder="A6"><br>
+        <label for="family">ΟΙΚ.ΚΑΤΑΣΤΑΣΗ:</label><br>
+		 <select name="family" id="family" style="width:190px;">
+            <option value="ΕΓΓΑΜΟΣ/Η">ΕΓΓΑΜΟΣ/Η</option>
+            <option value="ΑΓΑΜΟΣ/Η">ΑΓΑΜΟΣ/Η</option>
+         </select><br><br>
+        <!--input type="text" id="family" name="family" placeholder="A7"><br>-->
+        <label for="children">ΤΕΚΝΑ:</label>
+		<input type="checkbox" id="children" name="children" value="yes" onclick="appear();"><br><br>
+        <!--label for="yeschildren">ΝΑΙ</label><br>
+        <input type="checkbox" id="nochildren" name="nochildren" value="no">
+        <label for="nochildren">ΟΧΙ</label><br><br>-->
+        <!--input type= "text" id="children" name="children" placeholder="A8"><br>-->
+		<div id="child" class="visually-hidden">
+        <label for="fname">ΑΡΙΘΜΟΣ ΤΕΚΝΩΝ:</label><br>
+        <input type="number" id="numofchild" name="numofchild" placeholder="A9">
+		</div>
+      </form> 
+	  
+	
+    </div>
+	
+	 <div class="col-6 col-sm-6 col-md-6 col-lg-6 pt-5">
+	  <form>
+        <label for="birthday">ΗΜ/ΝΙΑ ΓΕΝΝΗΣΗΣ:</label><br>
+		  <input type="date" id="birthday"><br>
+
+        <!--input type="text" id="birth" name="birth" placeholder="A10"><br>-->
+        <label for="gender">ΦΥΛΟ:</label><br>
+		 <select name="gender" id="gender" style="width:190px;">
+            <option value="ΑΝΔΡΑΣ">ΑΝΔΡΑΣ</option>
+            <option value="ΓΥΝΑΙΚΑ">ΓΥΝΑΙΚΑ</option>
+         </select><br>
+        <!--input type="text" id="gender" name="gender" placeholder="A11"><br>-->
+		<label for="army">ΣΤΡ.ΥΠΟΧΡΕΩΣΕΙΣ:</label><br>
+		 <select name="army" id="army" style="width:190px;">
+            <option value="ΝΑΙ">ΝΑΙ</option>
+            <option value="ΟΧΙ">ΟΧΙ</option>
+         </select><br>
+        <!--input type="text" id="army" name="army" placeholder="A12"><br>-->
+        <label for="armydate">ΕΤΟΣ ΑΠΟΛΥΣΗΣ ΣΤΡ:</label><br>
+        <input type="number" id="armydate" name="armydate"><br><br>
+        <label for="cards">ΠΙΣΤΩΤΙΚΕΣ ΚΑΡΤΕΣ:</label><br>
+		<input type="checkbox" id="nbg" name="nbg">
+        <label for="nbg">ΕΘΝΙΚΗ</label><br>
+        <input type="checkbox" id="alpha" name="alpha">
+        <label for="alpha">ALPHA BANK</label><br>
+		<input type="checkbox" id="peireos" name="peireos" value="yes">
+        <label for="peireos">ΠΕΙΡΑΙΩΣ</label><br>
+        <input type="checkbox" id="eurobank" name="eurobank" value="no">
+        <label for="eurobank">EUROBANK</label><br><br>
+        <!--input type="text" id="cards" name="cards" placeholder="A14"><br>-->
+        <label for="lawn">ΔΑΝΕΙΟ:</label><br>
+        <input type="text" id="lawn" name="lawn" placeholder="A15"><br>
+        <label for="graduate">ΑΠΟΦΟΙΤΟΣ:</label><br>
+		 <select name="graduate" id="graduate" style="width:190px;">
+            <option value="ΓΥΜΝΑΣΙΟ">ΓΥΜΝΑΣΙΟ</option>
+            <option value="ΛΥΚΕΙΟ">ΛΥΚΕΙΟ</option>
+			<option value="ΤΕΛ">ΤΕΛ</option> 
+            <option value="ΑΕΙ">ΑΕΙ</option>
+            <option value="ΤΕΙ">ΤΕΙ</option>
+         </select><br><br>
+        <!--input type="text" id="graduate" name="graduate" placeholder="A16"><br><br>-->
+        <button type="button" onclick="alert('Thank you!!!')">ΑΠΟΣΤΟΛΗ</button>
+
+      </form>
+	
+    </div>
+	
+	
+  </div>	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+<!--<div class="container pt-4"> 
+</div> -->
+<!--------------------------------------------- Newsletter modal------------------------------------------------------->
+
+<div id="newsletterModal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Subscribe to our newsletter list!!!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+		 
+		 <input type="text" placeholder="Name" name="name" required><br><br>
+         <input type="text" placeholder="Email address" name="mail" required>
+		
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
+ 
+ 
